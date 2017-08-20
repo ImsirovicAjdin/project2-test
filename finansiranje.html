@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="container mt-5">
+
+<h1 class="display-4">Finansiranje</h1>
+<hr>
+</div>
+
+<div class="container mt-5 container-narrow">
+<form>
+	<h2>Osnovni podaci o vrsti i iznosu kredita</h2><hr class="bg-primary">
+	<fieldset class="form-group">
+      <legend>Odabir tipa kredita</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked> gotovinski kredit
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2"> kredit za nabavu osnovnih sredstava
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3"> kredit za nabavu obrtnih sredstava
+        </label>
+      </div>
+    </fieldset>
+	<div class="form-group">
+	  <legend>Odabir valute i iznosa kredita</legend>
+      <label for="exampleSelect1">Odaberite valutu</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>KM</option>
+        <option>EUR</option>
+      </select>
+    </div>
+	<div class="form-group">
+      <label for="exampleInputEmail1">Iznos kredita</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite iznos">
+      <small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+    </div>
+	<div class="form-group">
+	  <legend>Odabir roka otplate kredita</legend>
+      <label for="exampleInputEmail1">Rok otplate (u mjesecima)</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>12</option>
+        <option>18</option>
+		<option>24</option>
+		<option>36</option>
+		<option>48</option>
+		<option>60</option>
+      </select>
+      <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+
+	<h2 class="mt-5">Osnovni podaci o tražiocu kredita</h2><hr class="bg-primary">
+	<fieldset class="form-group">
+		<legend>Naziv pravnog lica</legend>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Naziv pravnog lica</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite naziv pravnog lica">
+			<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+		</div>
+		<legend>Ime i prezime rukovodne osobe</legend>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Ime i prezime</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite Vaše ime i prezime">
+			<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+		</div>
+		<legend>Kontakt telefon</legend>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Kontakt telefon</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite kontakt telefon">
+			<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+		</div>
+		<legend>Adresa pravnog lica</legend>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Adresa pravnog lica</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite adresu pravnog lica">
+			<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+		</div>
+
+		<legend>ID i PDV Broj</legend>
+		<div class="form-group">
+			<label for="exampleInputEmail1">ID broj</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite ID broj pravnog lica">
+			<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputEmail1">PDV broj</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Upišite PDV broj pravnog lica">
+			<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+		</div>
+    </fieldset>
+	<div class="form-group">
+	  <legend>Obrazloženje razloga za podizanje kredita</legend>
+      <label for="exampleTextarea">Obrazloženje razloga za podizanje kredita</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Na primjer: ''Proširenje proizvodnih kapaciteta''"></textarea>
+    </div>
+    <div class="form-group">
+	  <legend>Prilozi</legend>
+      <label for="exampleInputFile">Odaberite relevantne priloge</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+      <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+    </div>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Snimanje zahtjeva</label>
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ovaj zahtjev možete nazvati kako želite (na primjer: ''zahtjev za gradjevinski materijal''). Na taj nacin cete ga moci lakše pratiti na Vašem profilu">
+		<small id="emailHelp" class="form-text text-muted">Validacijska poruka za input polje</small>
+	</div>
+	<br><br>
+	<a class="btn btn-primary" href="/finansiranje-zahtjev-uspjesno-poslan"><i class="fa fa-sign-in"></i> Pošalji zahtjev za kreditiranje</a>
+	<!--
+    <button type="submit" class="btn btn-primary">Pošalji zahtjev</button>
+	-->
+  </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+
+
+{% include footer.html %}
+

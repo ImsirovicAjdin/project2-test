@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include navbar-login.html %}
+{% include _modal-login.html %}
+
+{% include jumbotron.html %}
+
+<div class="container">
+    
+    <h1 class="display-4 text-center pt-5">Probajte naše usluge</h1>
+    <p class="lead text-center mt-3">Naš sistem je u probnom periodu.</p>
+    <p class="lead text-center pb-5">To su dobre vijesti za Vas, jer su sve usluge besplatne do daljnjeg.</p>
+    
+    <div class="row pb-5">
+
+        <div class="col-lg-4">
+			{% include card1.html %}
+        </div>
+
+        <div class="col-lg-4">
+			{% include card2.html %}
+        </div>
+
+        <div class="col-lg-4">
+			{% include card3.html %}
+        </div>
+    
+    </div>
+
+</div>
+
+
+{% include footer.html %}

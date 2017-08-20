@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="container mt-5">
+
+<h1 class="display-4">Tražim ponudu</h1>
+<p class="lead">U naslovu navedite kratak opis traženog proizvoda ili usluge. Nakon toga upišite detaljan opis.</p>
+<br>
+<label>Navedite kratak opis trazenog proizvoda</label>
+<input type="text" class="form-control form-rounded bg-faded" placeholder="Na primjer: ''4 automobilske gume 185/15''">
+<br>
+<label>Detaljniji opis trazenog proizvoda (ukoliko je to potrebno)</label>
+<textarea class="form-control form-rounded bg-faded" rows="3" placeholder="Gume trebaju biti nove, pozeljno da je proizvodjac Sava ili Goodyear, MS gume"></textarea>
+<br>
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description" id="tooltipTrigger"
+  data-toggle="tooltip" 
+  data-placement="top" 
+  title="Kliknite na ovu opciju da biste zahtjev proslijedili bankama">
+  Pošalji zahtjev za finansiranje</span>
+</label>
+<br><br>
+<a class="btn btn-primary" href="/trazim-ponudu-zahtjev-proslijedjen">Proslijedi</a>
+<!--
+<button type="button" class="btn btn-primary">Proslijedi</button>
+-->
+
+</div>
+
+
+{% include footer.html %}
+

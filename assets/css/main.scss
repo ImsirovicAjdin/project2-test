@@ -1,0 +1,103 @@
+--- 
+--- 
+@import "bootstrap";
+
+.jumbotron {
+    background: url("../img/pexels-photo-374899.jpeg");
+    background-position-y: 60%;
+    height: 400px;
+}
+
+.text-shadow {
+	text-shadowX: 0px 0px 30px rgba(0, 0, 0, 0.99);
+	background: rgba(100, 200, 255, 0.79);
+}
+
+.bg-light-blue {
+    background: rgba(221, 231, 239, 0.44);
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 72px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 72px;
+    line-height: 72px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+
+    p {
+        margin-bottom: 0px;
+    }
+  }
+  
+#navbar-modal-button {
+    cursor: pointer;
+}
+
+.container-narrow {
+    max-width: 700px;
+}
+
+
+/*
+display-5
+*/
+
+.display-5 {
+    @extend .display-4;
+    font-size: 2rem;
+}
+
+
+/* 
+SUCCESS SVG
+*/
+
+.svg-success {
+    stroke-width: 2px;
+    stroke: #8EC343;
+    fill: none;
+    & path {
+        stroke-dasharray: 17px, 17px;
+        stroke-dashoffset: 0px;
+        -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+        animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    }
+    & circle {
+        stroke-dasharray: 76px, 76px;
+        stroke-dashoffset: 0px;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+        -webkit-animation: checkmark-circle 0.6s ease-in-out forwards;
+        animation: checkmark-circle 0.6s ease-in-out forwards;
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 17px;
+    }
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 76px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
