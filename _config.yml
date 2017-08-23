@@ -1,3 +1,5 @@
+baseurl: "/project2-test" # the subpath of your site, e.g. /blog
+
 sass:
   sass_dir: assets/scss
   style: :nested
